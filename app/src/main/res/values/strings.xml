@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ResistorCalculation</string>
+    <string name="resistor_calculator">Resistor Calculator</string>
+    <string name="resultado">Elige los colores!</string>
+    <string name="calcular">Calcular</string>
+    <string name="barra1">Barra1</string>
+</resources>

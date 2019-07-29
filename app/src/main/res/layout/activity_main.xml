@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_azul"
+        tools:context=".MainActivity">
+
+    <TextView android:id="@+id/tvResistencia"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAlignment="center"
+              android:textSize="30sp"
+              android:textColor="@color/color_rojo"
+              android:fontFamily="cursive"
+              android:text="@string/resistor_calculator"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:background="@drawable/resistor"
+                          android:orientation="horizontal"
+                          android:layout_height="186dp">
+
+                <TextView android:id="@+id/tvBarraUno"
+                          android:layout_width="17dp"
+                          android:textAlignment="viewEnd"
+                          android:layout_height="87dp"
+                          android:layout_marginLeft="60pt"
+                          android:layout_marginTop="15dp"
+                />
+                <TextView android:id="@+id/tvBarraDos"
+                          android:layout_width="17dp"
+                          android:textAlignment="viewEnd"
+                          android:layout_height="87dp"
+                          android:layout_marginLeft="4dp"
+                          android:layout_marginTop="15dp"
+                />
+                <TextView android:id="@+id/tvBarraTres"
+                          android:layout_width="17dp"
+                          android:textAlignment="viewEnd"
+                          android:layout_height="87dp"
+                          android:layout_marginLeft="6dp"
+                          android:layout_marginTop="15dp"
+                />
+                <TextView android:id="@+id/tvBarraCuatro"
+                          android:layout_width="17dp"
+                          android:textAlignment="viewEnd"
+                          android:layout_height="87dp"
+                          android:layout_marginLeft="23dp"
+                          android:layout_marginTop="15dp"
+                />
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tvResultado"
+                      android:textAlignment="center"
+                      android:textSize="20sp"
+                      android:background="@color/colorPrimary"
+                      android:textColor="@color/color_blanco"
+                      android:fontFamily="monospace"
+                      android:text="@string/resultado"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/color_blanco">
+
+                <Spinner android:id="@+id/spnBarraUno"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content">
+                </Spinner>
+                <Spinner android:id="@+id/spnBarraDos"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content">
+                </Spinner>
+                <Spinner android:id="@+id/spnBarraTres"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content">
+                </Spinner>
+                <Spinner android:id="@+id/spnBarraCuatro"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:dropDownSelector="@android:color/darker_gray"
+                         android:layout_height="wrap_content">
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@color/colorPrimary">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/tvBarra1"
+                          android:textAlignment="center"
+                          android:textColor="@color/color_blanco"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/tvBarra2"
+                          android:textColor="@color/color_blanco"
+                          android:textAlignment="center"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/tvBarra3"
+                          android:textColor="@color/color_blanco"
+                          android:textAlignment="center"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/tvBarra4"
+                          android:textColor="@color/color_blanco"
+                          android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <Button android:id="@+id/bnCalcular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_rojo"
+                    android:text="@string/calcular"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/color_azul">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/resistenciafinal"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
